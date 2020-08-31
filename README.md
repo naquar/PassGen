@@ -40,6 +40,7 @@ PassGen is a random password generator.
 	--writing-mode                                 -p: Prints password character by character. Press ENTER to show next character.
 	--entropy <string>                             -e: Calculates entropy of given password and rates it.
 	--license,                                     -l: Show license information.
+	--version,                                     -V: Show version information.
 ```
 
 
