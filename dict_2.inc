@@ -30,7 +30,7 @@
 
 	-------------------------------------------------------------------------------- **)
 pass_table_2: packed array[0..TABLE_2_SIZE-1] of string = (
-	// base 58
+	// base 58 - Chars: "aAbBcCdDeEfFgGhHijJkKLmMnNopPqQrRsStTuUvVwWxXyYzZ123456789"
 	'h','n','9','5','W','Q','x','C','R','b','7','X','j','M','w',
 	'a','V','g','z','A','m','P','q','i','B','c','L','s','t','o',
 	'y','K','f','F','d','S','k','2','8','N','4','e','G','U','p',

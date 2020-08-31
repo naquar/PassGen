@@ -17,6 +17,8 @@ export LOCAL_DATE
 export SOURCE_HASH
 export WORD_SEPARATOR
 
+SOURCE_FILES=COPYING dict.inc dict_1.inc dict_2.inc dict_3.inc dict_4.inc dict_5.inc dict_6.inc LICENSE.txt Makefile passgen.pas READ-ME.txt README.md REPENT THANKS
+
 release:
 	@rm -rf ./bin && mkdir -p ./bin
 	@$(FPC) $(RELEASE) ./$(BINARY_NAME).pas -o./bin/$(BIN)
@@ -37,7 +39,8 @@ install:
 	cp ./bin/$(BIN) /usr/local/bin
 
 source:
-	@tar --to-stdout -c COPYING *.inc Makefile *.pas READ-ME.txt README.md REPENT THANKS | xz -v --extreme -9 --stdout > $(PROGRAM_NAME)-v$(PROGRAM_VERSION).tar.xz
+	@rm -r -f $(BINARY_NAME) && mkdir $(BINARY_NAME) && cp $(SOURCE_FILES) $(BINARY_NAME)
+	@tar --to-stdout -c $(BINARY_NAME) | xz -v --extreme -9 --stdout > $(PROGRAM_NAME)-v$(PROGRAM_VERSION).tar.xz
 
 clean:
 	@rm -f *.o *.res *.a *.ppu ./bin/*
