@@ -29,6 +29,16 @@ PassGen is a random password generator.
 	*Note: Input data must be UTF-8 encoded and each character/word must be separated by a new line.*
 
 
+**Built-in dictionaries:**
+
+*	ID 1: Decimal characters.
+*	ID 2: Base58 characters.
+*	ID 3: Base95 characters (space included).
+*	ID 4: Hexadecimal characters (UPPERCASE).
+*	ID 5: 1024 English words.
+*	ID 6: 1024 (Brazilian) Portuguese words.
+
+
 **Additional options:**
 
 ```

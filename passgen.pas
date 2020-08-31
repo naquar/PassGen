@@ -184,6 +184,15 @@ begin
 	WriteLn(#09#09#09,'Note: Input data must be UTF-8 encoded and each character/word must be separated by a new line.');
 	WriteLn();
 
+	WriteLn('Built-in dictionaries:');
+	WriteLn(#09,'ID 1: Decimal characters.');
+	WriteLn(#09,'ID 2: Base58 characters.');
+	WriteLn(#09,'ID 3: Base95 characters (space included).');
+	WriteLn(#09,'ID 4: Hexadecimal characters (UPPERCASE).');
+	WriteLn(#09,'ID 5: 1024 English words.');
+	WriteLn(#09,'ID 6: 1024 (Brazilian) Portuguese words.');
+	WriteLn();
+
 	WriteLn('Additional options:');
 	WriteLn(#09,'--quiet,                                       -q: Keeps output to a minimum. Only show generated password (default).');
 	WriteLn(#09,'--verbose,                                     -v: Show details about generated password.');
